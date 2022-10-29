@@ -1,0 +1,135 @@
+.dashboard{
+    width: 100%;
+    max-width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 5fr;
+    top: 0;
+    position: absolute;
+}
+
+.dashboardContainer{
+    /* background-color: white; */
+    min-height: 100vh;
+    background-image: linear-gradient(rgb(183, 249, 249), white);
+
+    border-left: 1px solid gray;
+    padding: 2rem 0;
+}
+
+.dashboardContainer > h1{
+    width: 50%;
+    font: 400 2rem "Roboto";
+    text-align: center;
+
+    padding: 1rem;
+    margin: auto;
+}
+.outOfStock{
+    width: 60%;
+    height: 20vmax;
+    padding: 2vmax;
+    border-radius: 10px;
+    background-image: linear-gradient(rgb(183, 249, 249), white);
+    margin: 2vmax auto;
+    box-sizing: border-box;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font: 300 1.2vmax "Roboto";
+    /* color: blueviolet; */
+}
+.outOfStock > p{
+    font: 800 2vmax "cursive";
+    color: black;
+    margin: 2vmax 0;
+}
+.ProductValue{
+    /* width: 500px !important; */
+    /* height: 500px !important; */
+    border-radius: 100%;
+    background-image: linear-gradient(rgb(211, 253, 253), aqua);
+    padding: 1.2vmax;
+    color: white;
+}
+.dashboardSummery{
+    padding: 2rem 0;
+    /* background-color: aliceblue; */
+}
+
+.dashboardSummery > div{
+    display: flex;
+    justify-content: center;
+}
+
+.dashboardSummery > div > p{
+    background-color: skyblue;
+    color: white;
+
+    font: 300 1.3rem "Roboto";
+    text-align: center;
+    padding: 1.5rem;
+    width: 100%;
+
+}
+
+.dashboardSummeryBox2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.dashboardSummeryBox2 > a{
+    color: white;
+    font: 300 1.1rem "Roboto";
+    text-align: center;
+    width: 15vmax;
+    height: 15vmax;
+    border-radius: 100%;
+    margin: 0 1.5rem;
+background-color: gray;
+text-decoration: none;
+padding-top: 1.3rem;
+display: flex;
+align-items: center;
+justify-content: center;
+flex-direction: column;
+
+}
+.dashboardSummeryBox2>a>p{
+    font: 500 2vmax "Roboto";
+}
+
+.dashboardSummeryBox2 >  a:first-child{
+    color: black;
+    background-color: aqua;
+}
+.dashboardSummeryBox2 >  a:last-child{
+    color: white;
+    background-color: tomato;
+}
+
+
+@media screen and (max-width:600px) {
+    .dashboard{
+        max-width: 100%;
+        grid-template-columns: 1fr;
+    }
+    .dashboardContainer{
+        border-left: none;
+    }
+
+    .dashboardSummery > div > p{
+        margin: 0;
+    }
+    .dashboardSummeryBox2 > a{
+        width: 14vmax;
+        height: 14vmax;
+        padding-top: .9rem;
+        margin: 1rem;
+        font: 300 .8rem "Roboto";
+    }
+
+    
+}

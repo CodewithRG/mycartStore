@@ -1,0 +1,312 @@
+.ProductDetails{
+    width: 100vw;
+    min-height: 72vh;
+    display: flex;
+    flex-direction: row;
+    /* border: 2px solid gray; */
+    padding: 5vmax;
+background-image: linear-gradient(white, rgb(160, 245, 245));
+max-width: 100%;
+
+}
+.ProductDetails-size {
+    width: 50%;
+    min-height: 65vh;
+    /* border: 1px solid gold; */
+    padding: 1vmax 1.5vmax;
+}
+.Carousel{
+    align-items: center;
+
+}
+.CarouselImage{
+    width: 95%;
+    align-items: center;
+    /* border: 1px solid red; */
+
+}
+.center{
+    /* display: flex; */
+    /* align-items: center; */
+    /* align-content: center; */
+    align-items: center;
+    padding: 3vmax;
+}
+
+.DetailsBlock-1{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
+}
+.DetailsBlock-1 > p{
+color: rgb(84, 82, 82);
+font-size: 14px;
+}
+
+.DetailsBlock-2{
+display: flex;
+flex-direction: row;
+border-top: 1px solid gray ;
+border-bottom: 1px solid gray;
+padding: 2vmax 0;
+font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+align-items: center;
+
+}
+
+.DetailsBlock-2-span{
+    padding: 0 .5vmax;
+    font: 400 1.2vmax cursive;
+    /* color: darkblue; */
+    /* background-color: aqua; */
+}
+
+.DetailsBlock-3 {
+margin: 1.2vmax 0;
+}
+
+
+.DetailsBlock-3 > h4 {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: rgb(28, 28, 28);
+}
+.DetailsBlock-3-1 
+{
+    display: flex;
+    flex-direction: row;
+    /* background-color: aqua; */
+    align-items: center;
+    align-content: center;
+    padding-top: .5vmax;
+}
+.AddToCart{
+    min-width: 6vmax;
+    min-height: 2.5vmax;
+    margin-left: 2vmax;
+    border: none;
+    background-color: orangered;
+    padding: 5px 20px;
+    border-radius: 20px;
+    font-size: 16px;
+    color: white;
+    font-family: sans-serif;
+
+}
+.AddToCart:hover{
+
+    background-color: rgb(210, 56, 0);
+
+}
+.redColor{
+    color: red;
+}
+.greenColor{
+    color: green;
+}
+.plusMins{
+    min-width: 35px;
+    min-height: 2.5vmax;
+    text-align: center;
+    background-color: aquamarine;
+    border: 1px solid gray;
+
+}
+.plusMins:hover{
+    background-color: aqua;
+}
+#input-plusmins{
+    width: 40px;
+    min-height: 2.46vmax;
+    border: 1px solid gray;
+    text-align: center;
+}
+
+#Stock{
+    margin-top: .5vmax;
+}
+
+.DetailsBlock-4{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: 500;
+}
+
+.DetailsBlock-4 > p{
+font-family: serif;
+font-weight: 100;
+}
+
+.submitReview{
+    min-width: 12vmax;
+    min-height: 2.5vmax;
+    border: none;
+    color: white;
+    background-color: orangered;
+    padding: 5px 16px;
+    border-radius:20px ;
+    align-content: center;
+    font-size: 16.5px;
+    font-family: sans-serif;
+
+}
+.submitDialog{
+    display: flex;
+    flex-direction: column;
+    /* text-align: center; */
+}
+.submitDialogTextarea{
+    border: 1px solid gray;
+    margin: 1vmax 0;
+    outline: none;
+    padding: 1rem;
+    font: 300 1rem "Roboto";
+}
+/* .submitReview:hover{
+
+} */
+@media screen and (max-width:400px) {
+    .ProductDetails-size{
+        width: 100%;
+        min-height: 55vh;
+    }
+}
+
+
+
+
+
+.noReview{
+    width: 100%;
+    min-height:2vmax ;
+   
+}
+.noReview > p{
+    width: 100%;
+    height: 40px;
+    /* background-color: aqua; */
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: 500;
+    font-size: 18px;
+    text-align: center;
+    color: gray;
+   
+}
+
+.Reviews-heading{
+    width: 100%;
+    height: 80px;
+    /* margin: auto; */
+    padding: 2vmax 0;
+
+}
+
+.Reviews-heading > div{
+    width: 300px;
+    height: 40px;
+    margin: auto;
+    border-bottom:3px solid gray;
+    text-align: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 19px;
+    
+}
+.review-box{
+    width: 250px;
+    min-height: 12vmax;
+    border: 1px solid gray;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+    padding: 2vmax 5px;
+    margin: .3vmax;
+
+}
+.review-box > h4{
+    font-family: sans-serif;
+    color: rgb(19, 19, 19);
+    padding-top: 5px ;
+}
+.review-box > p{
+    width: 100%;
+    min-height: 2vmin;
+    color: rgb(108, 108, 108);
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: 200;
+    /* border: 1px solid gray; */
+    text-align: center;
+   
+
+}
+
+.review-box > img {
+    width: 70px;
+    height: 70px;
+    border-radius: 100%;
+}
+.review-main{
+    width: 100%;
+    padding: 1vmax;
+    display: flex;
+    flex-direction: row;
+    overflow: auto;
+}
+
+
+@media screen and (max-width:600px  ) {
+    .ProductDetails{
+        flex-direction: column;
+        align-items: center;
+        align-content: center;
+        padding: 6vmax 2vmax;
+    
+    }
+    .CarouselImage{
+        width: 100%;
+    
+        align-items: center;
+        /* border: 1px solid red; */
+        margin: 0vmax;
+    
+    }
+    .ProductDetails-size{
+        width: 100%;
+        min-height: 55vh;
+    }
+    .DetailsBlock-1{
+        display: flex;
+        flex-direction: column;
+        align-content: center;
+        align-items: center;
+    }
+    .DetailsBlock-2{
+        padding: 20px 0;
+        display: flex;
+        align-content: center;
+        align-items: center;
+        
+    }
+    .DetailsBlock-3-1{
+        padding: 20px 0;
+        display: flex;
+        align-content: center;
+        align-items: center;
+        
+    }
+    .review-box {
+        width: 120px;
+        border: 1px solid gray;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        align-content: center;
+        padding: 2vmax 5px;
+        margin: .3vmax;
+    }
+    .review-box > img{
+        width: 40px;
+        height: 40px;
+    }
+    .review-box > h4{
+        font: 300 2vmax "Roboto";
+    }
+
+    }

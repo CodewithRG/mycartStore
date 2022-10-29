@@ -1,0 +1,120 @@
+.banner{
+    width: 100vw;
+    height: 100vmin;
+    background-image: url(../../images/bannerLaptop.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    font-family: 'Roboto';
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content:flex-start;
+    padding-top: 5vmax;
+    opacity: 1;
+    max-width: 100%;
+    margin-bottom: 1vmax;
+}
+
+.banner p {
+    color: white;
+    font-weight: 600;
+    font-family: serif;
+}
+.banner h3{
+    font-weight: 900;
+    color: red;
+    font-family: 'Roboto';
+font-family:'Times New Roman', Times, serif;
+
+}
+.banner > span > button {
+    background-color: none;
+    border: 1px solid black;
+    padding: 10px 32px;
+    margin-top: 10px;
+    /* border-radius: 4px; */
+    font-weight: 600;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
+}
+
+#hov:hover{
+    transition: 1s;
+    background-color: none ;
+    color: gray;
+    /* border: 2px solid white; */
+
+}
+
+.banner::after {
+    content: "";
+    width: 100vw;
+    height: 100vmin;
+    background-color: white;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 9;
+    max-width: 100%;
+    /* clip-path: polygon(52% 76%, 0 100%, 100% 100%); */
+    clip-path: polygon(50% 100%, 100% 70%, 100% 100%, 0 100%, 0 70%);
+}
+
+.product-heading{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.product-heading h4{
+
+    font: 800 1.4rem 'Roboto';
+}
+
+.product-heading .Line{
+    background-color: aqua;
+    width: 42vmin;
+    height: .2vmin;
+    border-radius: 5px;
+    
+}
+.All{
+    padding: 2vmax 0;
+    background-image: linear-gradient(rgb(226, 253, 255),white) ;
+}
+.Container{
+    display: flex;
+    margin: 2vmax auto;
+    width: 90vw;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+
+@media screen and (max-width:600px) {
+    .Container{
+        width: 100vw;
+        /* border: 1px solid red; */
+    }
+
+    .banner > p{
+        font-size: 12px;
+    }
+    .banner > h3{
+        font-size: 16px;
+        margin-top: 0px;
+    }
+
+    .banner a button {
+        background-color: aqua;
+        border: 2px solid rgb(24, 24, 55);
+        padding: 1px 8px;
+        margin-top: 2px;
+        font-weight: 600;
+        font-size: 11px;
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    }
+}

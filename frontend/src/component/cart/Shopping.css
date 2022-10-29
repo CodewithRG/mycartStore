@@ -1,0 +1,123 @@
+.shippingContainer{
+    width: 100vw;
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    /* background-repeat: no-repeat; */
+    background-size: 100%;
+}
+#bg-color{
+    background-image: linear-gradient(white ,rgb(196, 247, 247));
+    
+}
+
+.shippingBox{
+    background-color: white;
+    width: 25vw;
+    height: 90vh;
+    box-sizing: border-box;
+    overflow: hidden;
+
+}
+
+.shippingHeading{
+    text-align: center;
+    color: rgba(0, 0, 0, 0.664);
+    margin: auto;
+    width: 50%;
+    font: 400 1.3vmax "Roboto";
+    border-bottom: 2px solid aqua;
+    padding: 1vmax;
+}
+
+.shippingForm{
+    height: 80%;
+    padding: 2vmax;
+    margin: auto;
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+
+    height: 80%;
+    transition: all .5s;
+
+}
+
+.shippingForm > div{
+    display: flex;
+    width: 100%;
+    align-items: center;
+}
+.shippingForm > div > select,
+.shippingForm > div > input{
+        padding: 0.5vmax 3vmax;
+        padding-right:1vmax ;
+        width: 100%;
+        box-sizing: border-box;
+        border: 1px solid gray;
+        border-radius: 4px;
+        outline: none;
+
+}
+
+.shippingForm > div > svg{
+    position: absolute;
+    transform: translateX(1vmax);
+    font-size: 1.6vmax;
+    color: gray;
+}
+
+.shippingBtn{
+    width: 50%;
+    height: 2.4vmax;
+    background-color: aqua;
+    color: black;
+    box-shadow: 0 2px 5px gray ;
+    cursor: pointer;
+    transition: all .5s;
+    outline: none;
+    padding: .1vmax 0;
+    align-items: center;
+    border: 1px solid gray;
+    border-radius: 4px;
+    font: 300  16px 'roboto';
+    /* margin-top: 20px; */
+}
+
+.shippingBtn:hover{
+    background-color: aquamarine;
+}
+
+@media screen and (max-width:600px) {
+    .shippingBox{
+        width: 100vw;
+        height: 95vh;
+    }
+    .shippingForm > div > select,
+    .shippingForm > div > input{
+            padding: 0.7vmax 4vmax;
+           
+    }
+    .shippingForm > div > svg{
+        position: absolute;
+        transform: translateX(1vmax);
+        font-size: 2.6vmax;
+        color: gray;
+    }
+    .shippingBtn{
+        width: 50%;
+        height: 6.4vmax;
+       
+        /* margin-top: 20px; */
+    }
+    
+.shippingHeading{
+    font: 400 2.5vmax "Roboto";
+    
+}
+}

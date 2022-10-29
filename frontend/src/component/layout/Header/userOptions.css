@@ -1,0 +1,13 @@
+.SpeedDial{
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    position: fixed;
+    color: aquamarine;
+}
+
+.profile{
+    width: 55px;
+    height: 55px;
+    border-radius: 100%;
+}

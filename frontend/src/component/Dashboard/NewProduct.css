@@ -1,0 +1,126 @@
+.newProductContainer{
+    max-width: 100%;
+    height: 100vh;
+    /* background-color: gray; */
+    background-image: linear-gradient(rgb(185, 250, 250), white);
+    /* color: black; */
+    display: flex;
+    justify-content: center;
+    border-left: 1px solid gray;
+    align-items: center;
+}
+
+.newProductForm{
+    width: 30vmax;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 2px 5px white ;
+    background-color: white;
+    align-items: center;
+    margin: auto;
+    padding: 2vmax;
+    justify-content: space-evenly;
+    height: 85%;
+    transition: all .5s;
+    /* background-color: yellowgreen; */
+
+}
+.newProductForm h1{
+    width: 100%;
+    border-bottom: 1px solid brown;
+    font: 600 1.5vmax "Roboto";
+    padding: 1vmax;
+    margin: 1vmax auto;
+    text-align: center;
+}
+
+.newProductForm > div{
+    display:  flex;
+align-items: center;
+/* padding: 0.5vmax 0; */
+width: 100%;
+margin: .2vmax 0;
+}
+
+
+.newProductForm > div >select,
+.newProductForm > div >input{
+    width: 100%;
+    height: 2.9vmax;
+    padding: 10px 35px;
+    font: 200 1vmax 'roboto';
+    border-radius: 4px;
+    border: 1px solid black;
+    outline: none;
+    color: black;
+}
+
+.newProductForm > div > svg{
+    position: absolute;
+    margin: 5px;
+    color: gray;
+}
+
+.createProductFormImage{
+    width: 40vmax;
+    /* height: 10vmax; */
+    /* display: flex; */
+    overflow: auto;
+    
+
+}
+
+.createProductFormImage > img{
+    margin: .2vmax;
+}
+
+#createProductBtn{
+    width: 100%;
+    /* height: 2.7vmax; */
+    background-color: aqua;
+    color: black;
+    box-shadow: 0 2px 5px gray ;
+    cursor: pointer;
+    transition: all .5s;
+    outline: none;
+    padding: .5vmax 0;
+    align-items: center;
+    border: 1px solid gray;
+    border-radius: 4px;
+    font: 500  1.1vmax 'roboto';
+}
+
+@media screen and (max-width:600px) {
+    
+    .newProductContainer{
+        border-left: none;
+    }
+    .newProductContainer{
+
+    }
+    .newProductForm{
+        width: 54vmax;
+    }
+    .newProductForm h1{
+        font: 600 2.2vmax "Roboto";
+    }
+    .newProductForm> div{
+
+    }
+    .newProductForm > div >select,
+.newProductForm > div >input{
+    width: 100%;
+    height: 4.5vmax;
+    padding: 18px 35px;
+    font: 200 2vmax 'roboto';
+    border-radius: 4px;
+    border: 1px solid black;
+    outline: none;
+}
+
+
+#createProductBtn{
+    font: 500 2.2vmax "Roboto";
+    padding: 1.6vmax 0;
+}
+}

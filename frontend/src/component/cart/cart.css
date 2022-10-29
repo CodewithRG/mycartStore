@@ -1,0 +1,238 @@
+.cartPage{
+    padding: 5vmax;
+    background-image: linear-gradient(rgb(180, 237, 237),white);
+    
+}
+
+.cartheader :last-child{
+    display: flex;
+    justify-content: flex-end;
+}
+.cartheader{
+    background-color: rgb(40, 174, 174);
+    width: 90%;
+    box-sizing: border-box;
+    color: white;
+    margin: auto;
+    font: 400 .9vmax "Roboto";
+    display: grid;
+    grid-template-columns: 4fr 1fr 1fr;
+    /* text-align: center; */
+    /* display: flex;
+    justify-content: center; */
+}
+
+.cartheader > p{
+    margin: 10px;
+    
+}
+
+.cartContainer{
+    /* background-color: aqua; */
+    width: 90%;
+    /* box-sizing: border-box; */
+    /* color: black; */
+    margin: auto;
+    /* font: 400 .9vmax "Roboto"; */
+    display: grid;
+    grid-template-columns: 4fr 1fr 1fr;
+
+}
+.cartInput{
+
+    display: flex;
+    align-items: center;
+    height: 8vmax;
+}
+
+.cartInput > button{
+    width: 2.5vmax;
+    height: 2.5vmax;
+    border: none;
+    background-color: rgb(31, 30, 30);
+    color: white;
+    cursor: pointer;
+    padding: .5vmax;
+    transition: .5s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.cartInput > button:hover{
+    background-color: black;
+}
+
+.cartInput > input{
+    width: 40px;
+    min-height: 2.46vmax;
+    /* border: 1px solid gray; */
+    border: none;
+
+    text-align: center;
+}
+
+.cartContainer > p{
+    font: 300 1vmax cursive;
+    display: flex;
+    padding: .5vmax;
+    justify-content: flex-end;
+    color: rgb(53, 53, 53);
+    box-sizing: border-box;
+    align-items: center;
+}
+
+.cartGrossProfit{
+    display: grid;
+    grid-template-columns: 2fr 1.2fr;
+}
+
+.cartGrossProfitBox{
+    border-top: 3px solid aqua;
+    margin: 1.5vmax 4vmax;
+    box-sizing: border-box;
+    font: 300 1vmax "Roboto";
+    padding: 1vmax .1vmax;
+    display: flex;
+    justify-content: space-between;
+}
+
+.checkoutBtn{
+    margin: 1vmax 4vmax;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.checkoutBtn > button{
+    border: none;
+    width: 50%;
+    border-radius: 30px;
+    background-color: rgb(2, 135, 135);
+    padding: .5vmax 1.2vmax;
+    font: 300 .9vmax "Roboto";
+    transition: all .5s;
+    color: white;
+
+}
+
+.NoCartContainer{
+    width: 100vw;
+    height: 100vh;
+    max-width: 100%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+}
+.NoCartContainer > div{
+    width: 14vmax;
+    height: 14vmax;
+    border: 10px solid gray;
+    border-radius: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.NoCartContainer > div > p{
+
+    position: absolute;
+    background-color: white;
+
+    font: 600 2.3vmax cursive;
+}
+
+.NoCartContainer > span{
+    background-color: aqua;
+    color: black;
+    margin: .5vmax;
+    padding: .8vmax 1.5vmax;
+    font: 300 .9vmax "Roboto";
+}
+.NoCartContainer > span > a{
+    text-decoration: none;
+    color: white;
+}
+
+.checkoutBtn > button:hover{
+    background-color: aqua;
+    color: black;
+}
+
+@media screen and (max-width:600px) {
+    
+    .cartPage{
+        padding: 10vmax 0vmax ;
+    }
+    .cartheader{
+        font: 300 2vmax "Roboto";
+    }
+    .cartInput{
+        margin-top: 0;
+    }
+    .cartInput > button{
+        width: 3.2vmax;
+        height: 4vmax;
+    }
+    .cartInput > input{
+        width: 2.2vmax;
+    }
+    .cartGrossProfit{
+        margin-top: 5vmax;
+        display: grid;
+        grid-template-columns: 0fr 2fr;
+    }
+   
+    .cartContainer>p{
+        display: flex;
+        padding: .5vmax;
+        /* justify-content: flex-end; */
+        /* border: 1px solid gray; */
+        height: 8vmax;
+        color: rgb(53, 53, 53);
+        font: 300 1.5vmax cursive;
+        box-sizing: border-box;
+        align-items: center;
+    }
+    .cartGrossProfitBox{
+    /* width: 22vmax; */
+         padding: 1vmax ;
+        font: 300 2vmax "Roboto";
+    }
+   .checkoutBtn{
+    text-align: center;
+}
+.checkoutBtn > button{
+    border: none;
+    width: 50%;
+    border-radius: 20px;
+    background-color: rgb(2, 135, 135);
+    padding: 1vmax 1vmax;
+    font: 300 2vmax "Roboto";
+    transition: all .5s;
+    color: white;
+
+}
+.NoCartContainer > div > p{
+
+    position: absolute;
+    top: 46%;
+    background-color: white;
+
+    font: 600 2.3vmax cursive;
+}
+
+.NoCartContainer > span{
+    background-color: aqua;
+    color: black;
+    margin: .5vmax;
+    padding: .8vmax 1.5vmax;
+    font: 300 2vmax "Roboto";
+    border-radius: 2px;
+}
+.NoCartContainer > span > a{
+    text-decoration: none;
+    color: white;
+}
+}

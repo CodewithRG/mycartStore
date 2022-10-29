@@ -1,0 +1,186 @@
+.profileContainer{
+    height: 100vh;
+    width: 100vw;
+    /* background-color: blue; */
+    display: flex;
+    max-width: 100%;
+    top: 0;
+    left: 0;
+    background-image: linear-gradient(rgb(116, 194, 194),white);
+
+}
+
+.profileContainer > div{
+    display: flex;
+    height: 100vh;
+    width: 100vw;
+    max-width: 100%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    /* background-color: white; */
+}
+
+.profileContainer > div:first-child > h1{
+    width: 100%;
+    margin: 1vmax 0;
+    color: black;
+    font:600 2.2vmax "Roboto";
+    text-align: center;
+    /* transform: translateX(-10vmax) translateY(-2vmax); */
+}
+
+.profileContainer > div:first-child > img { 
+    width: 16vmax;
+    height: 16vmax;
+    border-radius: 100%;
+    border: 1px solid gray;
+transition: all .5s;
+}
+
+.profileContainer > div:first-child > img:hover{
+    box-shadow: 2px 5px gray 5px;
+    transform: scale(1.05);
+}
+
+
+.profileContainer > div:first-child > a{
+    width: 30%;
+    background-color: aqua;
+    color: black;
+    margin: 4vmax;
+    text-align: center;
+    padding: 0.5vmax;
+    font: 400  1vmax "Roboto";
+    transition: all 0.5s;
+
+}
+
+
+.profileContainer > div:first-child > a:hover{
+    background-color: rgb(0, 132, 132);
+    color: white;
+}
+
+
+
+.profileContainer > div:Last-child {
+    justify-content: space-evenly;
+    padding: 6vmax;
+    box-sizing: border-box;
+    align-items: flex-start;
+}
+
+.profileContainer > div:Last-child > div >h4{
+    color: brown;
+    font:400 1.2vmax Roboto;
+
+}
+
+.profileContainer > div:Last-child > div >p{
+    color: rgb(24, 19, 19);
+    font:300 1vmax cursive;
+}
+
+.profileContainer > div:Last-child > div:last-child{
+
+display: flex;
+flex-direction: column;
+width: 60%;
+}
+
+.profileContainer > div:Last-child > div:last-child > a{
+    width: 80%;
+    background-color: black;
+    color: white;
+    margin: .3vmax 0;
+    text-align: center;
+    padding: 0.5vmax;
+    font: 400  1vmax "Roboto";
+    transition: all 0.5s;
+}
+
+
+.profileContainer > div:Last-child > div:last-child > a:hover{
+    background-color: rgb(86, 86, 86);
+    color: white;
+}
+
+@media screen and (max-width: 600px) {
+    .profileContainer{
+        flex-direction: column;
+    }
+    
+    .profileContainer > div:first-child{
+        justify-content: center;
+        align-items: center;
+    }
+.profileContainer > div:first-child > h1{
+ font-size: 3.2vmax;   
+}
+
+
+.profileContainer > div:first-child > img { 
+    width: 25vmax;
+    height: 25vmax  ;
+    border-radius: 100%;
+    border: 1px solid gray;
+transition: all .5s;
+}
+
+.profileContainer > div:first-child > a{
+    width: 40%;
+    background-color: aqua;
+    color: black;
+    margin: 4vmax;
+    text-align: center;
+    padding: 0.6vmax;
+    font: 400  2vmax "Roboto";
+    transition: all 0.5s;
+}
+
+
+.profileContainer > div:Last-child {
+    justify-content: space-evenly;
+    padding: 3vmax;
+    box-sizing: border-box;
+    align-items: center;
+}
+
+.profileContainer > div:Last-child > div >h4{
+    color: brown;
+    font:400 2.7vmax Roboto;
+
+}
+.profileContainer > div:Last-child > div{
+    text-align: center;
+}
+.profileContainer > div:Last-child > div >p{
+    color: rgb(24, 19, 19);
+    font:300 1vmax cursive;
+}
+.profileContainer > div:Last-child > div >p{
+    color: rgb(24, 19, 19);
+    font:300 2.3vmax cursive;
+}
+.profileContainer > div:Last-child > div:last-child{
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    }
+    .profileContainer > div:Last-child > div:last-child > a{
+        width: 70%;
+        background-color: black;
+        color: white;
+        margin: .5vmax 0;
+        text-align: center;
+        padding: 1vmax;
+        font: 400  2vmax "Roboto";
+        transition: all 0.5s;
+    }
+
+
+}

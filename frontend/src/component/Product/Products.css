@@ -1,0 +1,176 @@
+.product-heading{
+    width: 100%;
+    max-height: 14vmax;
+    display: flex;
+    align-content: center;
+    align-items: center;
+
+}
+.productsMainBox{
+    min-height: 100vh;
+    background-image: linear-gradient(white,rgb(212, 255, 255));
+}
+
+.product-heading > p {
+    width: 20%;
+    max-height: 14vmax;
+    border-bottom: 2px solid aqua;
+    text-align: center;
+    font-size: 18px;
+    font-weight: 600;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    padding: 2vmax  0px 1vmax  0px;
+}
+
+.products{
+    width: 80%;
+    min-height: 43vh;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    margin: 1vmax auto;
+    
+}
+
+.paginationBox{
+    display: flex;
+    justify-content: center;
+    margin: 6vmax auto;
+}
+
+.pagination{
+    display: flex;
+    justify-content: flex-end;
+    padding: 0;
+}
+
+.page-item{
+  
+    list-style: none;
+    cursor: pointer;
+    transition: all .3s;
+
+}
+.page-item :hover{
+background-color: gray;    
+
+}
+
+.page-link{
+    background-color: rgb(225 , 225,225);
+    padding: .7vmax 1.4vmax;
+    border: .5px solid gray;
+    color: gray;
+}
+
+
+
+
+.pageLinkActive{
+    background-color: tomato;
+    color: white;
+}
+
+
+.filterBox{
+    width: 12vmax;
+    position: absolute;
+    top: 8vmax;
+    left: 3vmax;
+    /* border: 1px solid black; */
+    /* box-shadow: 0 0 5px gray; */
+    padding: 1vmax;
+
+}
+.filterBox > fieldset{
+    
+    border: 1px solid black;
+    padding: 0 .5vmax;
+    margin-bottom: 20vmax;
+
+}
+.legend{
+    position: relative;
+    top: -12px;
+    padding-left: 4px;
+    min-width: 1vmax;
+    /* border: 1px solid red; */
+    background-color: white;
+    font: 400 1.2vmax 'roboto';
+    
+}
+.categoryBox{
+    padding: 0;
+}
+.category-link{
+    /* border: 1px solid gray; */
+    background-image: linear-gradient(rgb(176, 254, 254),rgb(142, 253, 253));
+    border-radius: 4px;
+    list-style: none;
+    color: rgb(79, 79, 79);
+    font: 400 .9vmax "Roboto";
+    cursor: pointer;
+    padding: .6vmax 0;
+    text-align: center;
+    margin: .4vmax;
+    transition: all .5s;
+
+}
+.category-link:hover{
+    color: tomato;
+}
+
+@media screen and (max-width:600px) {
+    .products{
+        width: 99%;
+        min-height: 43vh;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        align-content: center;
+        margin: 1vmax auto;
+        
+    }
+    
+.filterBox{
+    width: 80%;
+    position: static;
+    margin: auto;
+}
+.category-link{
+    font: 500 2vmax "Roboto";
+    padding: 1.5vmax 0;
+    margin: 1vmax 0;
+    color: white;
+
+}
+
+.legend{
+    width: 16.5vmax;
+
+    position: relative;
+    top: -9.9px;
+    left: 1 vmax;
+    padding-left: 4px;
+    /* border: 1px solid red; */
+    background-color: white;
+    font: 400 2.4vmax 'roboto';
+
+    
+}
+.paginationBox{
+    margin: 2vmax 0;
+}
+.filterBox > fieldset{
+    
+    border: 1px solid black;
+    padding: 0 .5vmax;
+    margin: 6vmax 0;
+
+}
+}

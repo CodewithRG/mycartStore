@@ -1,0 +1,47 @@
+.main{
+    color:blueviolet;
+    background-color: red;
+}
+.margin{
+    margin-top: 3vmax;
+    border: 1px solid red;
+
+}
+.font{
+
+    font-family: 'Roboto';
+}
+a{
+    text-decoration: none;
+
+}
+.line-parents{
+    display: flex;
+    justify-content: center;
+}
+.line{
+    width: 150px;
+    height: 2px;
+    background-color: black;
+}
+.hov:hover{
+    transition: 1s;
+    color: aqua;
+}
+.mid{
+    display: flex;
+    
+    justify-content: center;
+
+   
+}
+.headColer{
+    color: aqua;
+}
+.bg-color{
+    background-color: rgb(15, 10, 10);
+}
+.text-color{
+    color: white;
+}
+

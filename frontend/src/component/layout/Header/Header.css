@@ -1,0 +1,214 @@
+.nav-style{
+    background-color: aqua;
+}
+
+:root
+{
+    /* --color1 :     background-image:linear-gradient(black,white); */
+    
+}
+.mainNav {
+    width: 4vmax;
+    height: 3vmax;
+    /* border: 1px solid black; */
+    padding: 4px;
+    position: absolute;
+    position:fixed;
+    top: 0;
+    z-index: 1000;
+    margin-top: 1vmax;
+    margin-left: 1vmax;
+}
+
+.burgerItem {
+    width: 2.6vmax;
+    height: .15vmax;
+    margin-top: .4vmax;
+    border-radius: 10px;
+    border: 1px solid black;
+    background-color: black;
+}
+
+.hide {
+    /* transform: scale(0); */
+    /* transition: 2s; */
+
+    display: none;
+    transition-delay: 1s;
+}
+
+.animate {
+    /* display: none; */
+    animation-name: example;
+    animation-duration: 1s;
+    /* background-color: var(--color1);
+     */
+    /* background-image:linear-gradient(black,white); */
+
+}
+
+
+@keyframes example {
+    from {
+        transition: .6s;
+        width: 1%;
+        height: 1px;
+       /* background-color: var(--color1); */
+    }
+
+    to {
+        height: 100vh;
+        width: 100%;
+        /* transition: 1s; */
+        /* background-color: var(--color1); */
+    }
+}
+
+.rotateFirst {
+    background-color: white;
+    border: 1px solid white;
+    transition: .5s;
+    position: relative;
+    top: 8px;
+    transform: rotate(45deg);
+}
+
+.rotateThird {
+    background-color: white;
+    border: 1px solid white;
+    transition: .5s;
+    position: relative;
+    top: 1px;
+    transform: rotate(-45deg);
+
+}
+#mainDragDrop{
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    position:fixed;
+    top: 0;
+    z-index: 900;
+}
+.mainDrag {
+    animation-name: mainDrag;
+    animation-duration: 2s;
+    background-image: linear-gradient(rgb(184, 255, 255), white);
+    animation-delay: 0.01s;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+
+
+@keyframes mainDrag {
+    from {
+        transition: .6s;
+        /* width: 1%; */
+        height: 1px;
+       /* background-color: var(--color1); */
+    }
+
+    to {
+        height: 100vh;
+        /* width: 100%; */
+        /* transition: 1s; */
+        /* background-color: var(--color1); */
+    }
+}
+
+.logo {
+    /* width: 20vmax; */
+    height: 6vmax;
+    text-align: center;
+    /* border: 1px solid black; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.links .link a {
+    text-decoration: none;
+    color: black;
+    cursor: pointer;
+    
+
+
+}
+
+.links{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 3vmax 0;
+
+}
+
+.link {
+    width: 10vmax;
+    height: 3.5vmax;
+    /* border: 1px solid black; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-weight: 700;
+    font-family: 'Roboto';
+    cursor: pointer;
+
+}
+
+.icons {
+    /* width: 20vmax; */
+    height: 4vmax;
+    /* border: 1px solid black; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    /* margin-top: 1vmax; */
+    cursor: pointer;
+
+}
+
+.icon {
+    width: 13%;
+    height: 4vmax;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+
+}
+
+.link:hover {
+    border: 1px solid white;
+}
+
+.icon:hover {
+    border: 1px solid white;
+}
+@media screen and (max-width:576px) {
+  .link{
+    width: 6vmax;
+    /* height: 8vmax; */
+    margin: 3vmax;
+    /* border: 1px solid black; */
+    font-size: 13px;
+  }
+
+  .icons{
+    /* width: 30vmax; */
+    /* height: 8vmax; */
+    margin-top: 1vmax;
+    /* border: 1px solid black; */
+
+  }
+
+  
+}

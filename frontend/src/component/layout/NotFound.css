@@ -1,0 +1,40 @@
+.notFoundContainer{
+    width: 100vw;
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: linear-gradient(gray, white);
+
+}
+.notFoundContainer > div{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+
+}
+.notFoundContainer > div > svg{
+    margin: 0 auto;
+    text-align: center;
+    color: rgb(210, 79, 79);
+    font-size: 6vmax;
+}
+
+.notFoundContainer > div > a{
+    width: 8vmax;
+    height: 3.3vmax;
+    background-color: aqua;
+    padding: 1vmax;
+    text-decoration: none;
+    color: white;
+    border-radius: 4px;
+    font: 500 1.21vmax "Roboto";
+    margin: auto;
+}
+.notFoundContainer > div > p{
+    font: 600 2.6vmax "Roboto";
+    color: rgb(62, 62, 62);
+    margin: 1.5vmax 0;
+}

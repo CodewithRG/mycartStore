@@ -1,0 +1,179 @@
+.orderDetailPage{
+    width: 100vw;
+    height: 100vh;
+    max-width: 100%;
+
+}
+
+
+
+.orderDetailContainer{
+    padding: 2vmax 5vmax;
+    padding-bottom:  0;
+}
+
+.orderDetailContainer h1{
+    font: 600 1.6vmax "Roboto";
+    padding: 1vmax 0.5vmax;
+    color: brown;
+}
+
+.orderDetailsCartItemsContainer,
+.orderDetailContainerBox{
+    margin: 1vmax;
+}
+
+.orderDetailContainerBox >div {
+    height: 2vmax;
+    display: flex;
+    margin: .1vmax 0;
+    /* border: 1px solid gray; */
+}
+
+
+
+
+.orderDetailsCartItems{
+    /* padding: 1vmax 1vmax; */
+    padding-bottom:  0;
+   
+}
+
+.orderDetailsCartItemsContainerBox{
+    padding: 0vmax 1.5vmax;
+
+}
+
+.orderDetailsCartItemsContainerBox > div{
+    display: flex;
+    font: 400 1vmax "Roboto";
+    align-items: center;
+    justify-content: space-between;
+    margin: 1.5vmax 0;
+
+}
+.orderDetailsCartItems{
+
+    max-height: 30vmax;
+    /* max-width: 25vmax; */
+    overflow-y: auto;
+    /* border: 1px solid black; */
+    /* padding-right: 5vmax; */
+}
+
+
+.orderDetailsCartItemsContainerBox >div >img{
+    width: 6vmax;
+}
+
+.orderDetailsCartItemsContainerBox > div > a{
+    text-decoration: none;
+    font: 400 1vmax "Roboto";
+
+    width: 70%
+}
+
+
+
+
+.orderDetailsCartItems > p,
+.orderDetailContainer>p,
+.orderSummery>p{
+    font: 500 1.4vmax "Roboto";
+    color: brown;
+    border-bottom: 0.2px solid brown;
+    padding: 12px 5px;
+    /* text-align: center; */
+    
+}
+
+.orderSummery > div >div{
+    height: 2.5vmax;
+    display: flex;
+    justify-content: space-between;
+    margin: .5vmax 0;
+}
+
+.orderSummery > div >div > span,
+.orderDetailContainerBox >div  > span{
+    font: 300 1.1vmax cursive;
+    color: rgb(47, 47, 47);
+}
+
+.orderDetailContainerBox >div  > p, 
+.orderSummery >div >div > p,
+.orderDetailContainerBox >div  > p{
+    font: 500 1.2vmax "Roboto";
+    padding-right:15px;
+}
+
+
+.orderSummeryTotal{
+    display: flex;
+    justify-content: space-between;
+    border-top: 2px solid gray ;
+    padding: 10px 0px;
+font: 300 1.1vmax cursive;
+color: black;
+}
+
+
+
+.orderSummery > button:hover{
+    background-color: rgb(1, 89, 1);
+}
+
+@media screen and (max-width:600px) {
+    
+  
+
+    .orderDetailsCartItems > p,
+.orderDetailContainer>p,
+.orderSummery>p{
+    font: 500 2.2vmax "Roboto";
+   
+    
+}
+
+.orderDetailContainerBox >div  > p, 
+.orderSummery >div >div > p,
+.orderDetailContainerBox >div  > p{
+    font: 500 2.2vmax "Roboto";
+    padding-right:15px;
+}
+
+
+.orderDetailContainerBox >div {
+    height: 4vmax;
+}
+.orderDetailsCartItemsContainerb > div >span,
+.orderSummery > div >div > span,
+.orderDetailContainerBox >div  > span{
+    font: 300 2.1vmax cursive;
+    color: rgb(47, 47, 47);
+}
+
+.orderDetailsCartItemsContainerBox{
+
+    max-height: 35vmax;
+    /* max-width: 25vmax; */
+    overflow-y: auto;
+    /* border: 1px solid black; */
+    /* padding-right: 5vmax; */
+}
+
+
+.orderDetailsCartItemsContainerBox >div >img{
+    width: 12vmax;
+}
+
+.orderDetailsCartItemsContainerBox > div > a{
+    text-decoration: none;
+    font: 400 2.2vmax "Roboto";
+
+    width: 30%
+}
+.orderDetailsCartItemsContainerBox > div > span{
+    font: 300 2.2vmax "Roboto";
+}
+}

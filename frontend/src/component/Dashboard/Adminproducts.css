@@ -1,0 +1,69 @@
+.adminProductContainer{
+    width: 100%;
+    background-color: white;
+    border-left: 1px solid gray;
+}
+
+.adminProductContainer > h1{
+    width: 50%;
+    font: 400 1.9vmax "Roboto";
+    color: brown;
+    border-bottom: 2px solid brown;
+    padding: 1vmax;
+    text-align: center;
+    margin: 1vmax auto;
+
+}
+
+
+.adminProductTable{
+    width: 98%;
+    height: auto;
+    box-shadow: .5px .5px 4px 2px gray;
+    margin:2vmax auto;
+}
+
+.adminProductTable  >div{
+    font: 300 1vmax cursive;
+    color: rgb(93, 93, 93);
+    border: none !important;
+}
+
+.adminProductTable  a{
+    color: rgb(72, 72, 72);
+    transition: all 0.5s;
+}
+
+.adminProductTable a:hover{
+    color: aqua;
+}
+.adminProductTable button:hover{
+    color: red;
+}
+
+.MuiDataGrid-columnHeader div{
+    padding: 1vmax 0;
+    color: black;
+    font: 500 1.2vmax "Roboto";
+}
+@media screen and (max-width:600px) {
+    .adminProductContainer{
+        border-left: none;
+    }
+    .adminProductContainer > h1{
+        /* border-bottom: 2px solid aqua; */
+        padding: 2vmax;
+        margin: 2vmax auto;
+        font: 600 2.9vmax "Roboto";
+    }
+    
+.adminProductTable  >div{
+    font: 300 2.2vmax cursive;
+}
+.MuiDataGrid-columnHeader div{
+    padding: 1vmax 0;
+    color: black;
+    font: 600 2.4vmax "Roboto";
+}
+    
+}

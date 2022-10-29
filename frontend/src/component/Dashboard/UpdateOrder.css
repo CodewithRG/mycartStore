@@ -1,0 +1,67 @@
+.orderDetailContainerBoxPayment{
+    padding: 0 5vmax;
+}
+
+.orderDetailContainerBoxPayment > p{
+    font: 500 1.6vmax "Roboto";
+    color: brown;
+    border-bottom: 0.2px solid brown;
+    padding: 12px 5px;
+    /* text-align: center; */
+}
+
+.Amount{
+    display: flex;
+    /* align-items: ; */
+    align-content: space-between;
+    justify-content: space-between;
+}
+.Amount > p{
+    font: 600 1.3vmax "Roboto" ;
+}
+
+.orderDetailContainerBoxStatus{
+    padding: 0 5vmax;
+    
+}
+.orderDetailContainerBoxStatus > p{
+    font: 500 1.6vmax "Roboto";
+    color: brown;
+    border-bottom: 0.2px solid brown;
+    padding: 12px 5px;
+    /* text-align: center; */
+}
+.orderProccessForm{
+    
+    padding: 8vmax 4vmax;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+}
+
+.orderProccessForm > div{
+    display:  flex;
+align-items: center;
+/* padding: 0.5vmax 0; */
+width: 100%;
+margin: 1.5vmax 0;
+}
+
+
+.orderProccessForm > div > select{
+    width: 100%;
+    height: 2.9vmax;
+    padding: 10px 35px;
+    font: 200 1vmax 'roboto';
+    border-radius: 4px;
+    border: 1px solid black;
+    outline: none;
+    color: black;
+}
+.orderProccessForm > div > svg{
+    position: absolute;
+    margin: 5px;
+    color: gray;
+}

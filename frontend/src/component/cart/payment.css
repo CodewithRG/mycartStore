@@ -1,0 +1,109 @@
+.paymentContainer{
+    width: 100vw;
+    height: 74vh;
+    max-width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.paymentForm{
+    width: 22%;
+    height: 100%;
+}
+
+.paymentForm > p{
+    font: 400 1.2vmax "Roboto";
+    text-align: center;
+    color:  brown;
+    border-bottom: 1px solid brown;
+    width: 50%;
+    
+    padding: 1vmax 0;
+    margin: auto;
+}
+
+.paymentForm > div{
+    display: flex;
+    align-items: center;
+    margin: 2vmax 0;
+
+}
+.paymentForm > div > svg{
+    position: absolute;
+    transform: translateX(1vmax);
+    font-size: 1.6vmax;
+    color: rgb(72, 72, 72);
+}
+.paymentInput{
+    box-sizing: border-box;
+    padding: 1vmax 4vmax;
+    padding-right: 1vmax;
+    width: 100%;
+    border: 1px solid gray;
+    outline: none;
+}
+
+.paymentFormBtn{
+    width: 100%;
+    /* height: 2.4vmax; */
+    background-color: tomato;
+    color: white;
+    box-shadow: 0 2px 5px gray ;
+    cursor: pointer;
+    transition: all .5s;
+    outline: none;
+    padding: .7vmax 0;
+    align-items: center;
+    border: 1px solid gray;
+    border-radius: 4px;
+    font: 300  16px 'roboto';
+    /* margin-top: 20px; */
+}
+
+.paymentFormBtn:hover{
+    background-color: rgb(250, 126, 104);
+}
+
+
+@media screen and (max-width:600px) {
+
+    .paymentForm{
+        width: 90%;
+    }
+
+    .paymentForm > p{
+        font: 400 2.8vmax "Roboto";
+        /* margin: 2vmax ; */
+    }
+    .paymentForm > div{
+        display: flex;
+        align-items: center;
+        margin: 2vmax 0;
+    
+    }
+
+    .paymentForm > div{
+        margin: 3vmax 0;
+    }
+    .paymentForm > div > svg{
+     
+        font-size: 3vmax;
+        color: rgb(72, 72, 72);
+    }
+    .paymentInput{
+        box-sizing: border-box;
+        padding: 2.5vmax 6vmax;
+        padding-right: 2vmax;
+        width: 100%;
+        border: 1px solid gray;
+        outline: none;
+    }
+
+    .paymentFormBtn{
+    padding: 1.5vmax 0;
+    color: rgb(226, 226, 226);
+    font: 300  16px 'roboto';
+
+    }
+}
